@@ -85,6 +85,162 @@ Elemntos de linea-> display: flex;
     transition: 0.5s;
 }
 
+.lienzo {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/* Estilos de Tarjetas */
+
+.card {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+
+.card-img {
+    width: 100%;
+    margin: auto;
+    padding: 10px 10px 0px 10px;
+    text-align: center;
+}
+
+.card-img img {
+    width: 100%;
+}
+
+.card-text {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding: 10px 10px 10px 0px;
+}
+
+.card-title {
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.card-price {
+    text-align: right;
+    font-weight: 700;
+}
+
+.card:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: 0.5s;
+}
+
+.class-of-js {
+    transform: rotateY(360deg);
+    transition: 0.5s;
+}
+
+
+/* **********************Css Modal************************** */
+
+.modal-content {
+    display: none;
+}
+
+.modal-window {
+    position: fixed;
+    width: 80%;
+    height: 80vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(221, 219, 219);
+    z-index: 2;
+}
+
+.modal-content::before {
+    content: "";
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+
+.modal-window {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    padding: 10px;
+}
+
+.modal-exit {
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: red;
+    cursor: pointer;
+    border: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.modal-img {
+    width: 50%;
+    height: 95%;
+}
+
+.modal-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+}
+
+.modal-text {
+    height: 90%;
+    text-align: center;
+    padding: 15px;
+}
+
+.modal-title {
+    font-family: Nelly;
+    font-size: 80px;
+}
+
+.modal-price {
+    text-align: left;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+.modal-text hr {
+    margin: auto;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.modal-descrip {
+    font-size: 20px;
+    font-family: Arial;
+    text-align: justify;
+    font-weight: 1.5;
+}
+
+.modal-author {
+    float: right;
+    margin-top: 20px;
+    font-family: Nelly;
+    font-size: 35px;
+    color: rgb(46, 46, 46);
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
+}
+
 
 /* if(max-width: 700px){} */
 
@@ -98,5 +254,8 @@ Elemntos de linea-> display: flex;
     }
     .png-box {
         display: none;
+    }
+    .card {
+        width: 45%;
     }
 }
